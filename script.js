@@ -34,7 +34,7 @@ noBtn.addEventListener('mouseover', () => {
 });
 
 noBtn.addEventListener('click', () => {
-    responseText.textContent = 'Non ? Tant pis, tu es quand même mon Valentin ! 🤭';
+    responseText.textContent = 'Non ? Tant pis, tu es quand même ma Valentine ! 🤭';
     gif.src = 'https://i.pinimg.com/originals/3e/47/7e/3e477e83c35e2a7a38f19ccdad163faa.gif';
     yesBtn.style.display = 'none';
     noBtn.style.display = 'none';
