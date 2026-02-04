@@ -111,18 +111,25 @@ window.addEventListener('resize', () => {
 
 // sounds
 
+function playSound(sound) {
+    if (sound && sound.readyState >= 2) {
+        sound.currentTime = 0;
+        sound.play().catch(() => {});
+    }
+}
+
 yesBtn.addEventListener('mouseenter', () => {
-    hoverSound.play();
+    playSound(hoverSound);
 });
 
 noBtn.addEventListener('mouseenter', () => {
-    hoverSound.play();
+    playSound(hoverSound);
 });
 
 yesBtn.addEventListener('click', () => {
-    yesSound.play();
+    playSound(yesSound);
 });
 
 noBtn.addEventListener('click', () => {
-    noSound.play();
+    playSound(noSound);
 });
